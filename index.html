@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jakub Nekvinda — ST3V1K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400;600;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="grid-bg"></div>
+  <nav>
+    <a href="#" class="nav-logo">ST3V1K</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#oss">Open Source</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- HERO -->
+    <section id="hero" style="padding-top:8rem;">
+      <div class="hero-left">
+        <p class="hero-tag">Software Developer</p>
+        <h1>Jakub<br><span class="h1-dim">Nekvinda</span></h1>
+        <p class="hero-handle">ST3V1K</p>
+        <p class="hero-desc">
+          I build tools and contribute to open source.
+          Interested in <em>developer tooling</em>, hermetic builds,
+          and the occasional vocabulary trainer.
+        </p>
+        <div class="hero-cta">
+          <a href="https://github.com/ST3V1K" class="btn btn-primary" target="_blank">GitHub Profile</a>
+          <a href="#projects" class="btn btn-outline">See Projects</a>
+        </div>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span>
+          <span class="dot dot-y"></span>
+          <span class="dot dot-g"></span>
+          <span class="terminal-title">jakub@dev ~ profile.json</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="t-prompt">$</span> <span class="t-cmd">cat profile.json</span></div>
+          <div><span class="t-arr">{</span></div>
+          <div>&nbsp;&nbsp;<span class="t-key">"name"</span><span class="t-dim">:</span> <span class="t-str">"Jakub
+              Nekvinda"</span><span class="t-dim">,</span></div>
+          <div>&nbsp;&nbsp;<span class="t-key">"handle"</span><span class="t-dim">:</span> <span
+              class="t-str">"ST3V1K"</span><span class="t-dim">,</span></div>
+          <div>&nbsp;&nbsp;<span class="t-key">"languages"</span><span class="t-dim">:</span> <span
+              class="t-arr">[</span><span class="t-str">"Python"</span><span class="t-dim">,</span> <span
+              class="t-str">"TypeScript"</span><span class="t-dim">,</span> <span class="t-str">"Java"</span><span
+              class="t-arr">]</span><span class="t-dim">,</span></div>
+          <div>&nbsp;&nbsp;<span class="t-key">"open_source"</span><span class="t-dim">:</span> <span
+              class="t-val">true</span><span class="t-dim">,</span></div>
+          <div>&nbsp;&nbsp;<span class="t-key">"status"</span><span class="t-dim">:</span> <span class="t-str">"building
+              things"</span></div>
+          <div><span class="t-arr">}</span></div>
+          <div>&nbsp;</div>
+          <div><span class="t-prompt">$</span> <span class="t-cursor"></span></div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section-label">01 — About</p>
+      <h2>A bit about me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a software developer working across Python, TypeScript, and Java.
+            I care about clean code, well-designed tooling, and contributing back
+            to the open-source projects I rely on.
+          </p>
+          <p>
+            Recently I've been contributing to <em>hermeto</em> — a CLI tool
+            for hermetic container builds — refactoring internals, improving
+            Go toolchain detection, and cleaning up docs.
+          </p>
+          <p>
+            When I'm not pushing code, I'm probably tinkering with
+            <em>language learning tools</em> or exploring new technologies.
+          </p>
+        </div>
+        <div>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-num" id="contrib-count">—</div>
+              <div class="stat-label">Recent contributions made</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Coffee consumed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section-label">02 — Projects</p>
+      <h2>Things I've built</h2>
+      <div class="projects-grid">
+        <a href="https://github.com/ST3V1K/hermeto" class="project-card" target="_blank">
+          <div class="project-lang">Python</div>
+          <div class="project-name">hermeto</div>
+          <div class="project-desc">
+            CLI tool that prefetches project dependencies for hermetic, network-isolated
+            container builds. Forked and contributed upstream.
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a href="https://github.com/ST3V1K/VocabTrainer" class="project-card" target="_blank">
+          <div class="project-lang">TypeScript</div>
+          <div class="project-name">VocabTrainer</div>
+          <div class="project-desc">
+            A vocabulary training application for learning and practising new words.
+            Built with TypeScript.
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a href="https://github.com/ST3V1K/Library-Management-System" class="project-card" target="_blank">
+          <div class="project-lang">Java</div>
+          <div class="project-name">Library Management System</div>
+          <div class="project-desc">
+            A full-featured library management system demonstrating OOP design
+            principles in Java.
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a href="https://github.com/RamoFX/AGC_Technowizz" class="project-card" target="_blank">
+          <div class="project-lang">C#</div>
+          <div class="project-name">AGC Technowizz</div>
+          <div class="project-desc">
+            Collaborative C# project. Contributed as part of a team, building
+            out features and game logic.
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a href="https://github.com/ST3V1K/ColdCase" class="project-card" target="_blank">
+          <div class="project-lang">Java</div>
+          <div class="project-name">ColdCase</div>
+          <div class="project-desc">
+            Minecraft mod forked from GriefLogger, adding detective gameplay —
+            magnifying glass, autopsy kit, dead bodies and more.
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+        <a href="https://github.com/ST3V1K" class="project-card" target="_blank">
+          <div class="project-lang">Various</div>
+          <div class="project-name">More on GitHub →</div>
+          <div class="project-desc">
+            More public repositories covering different languages, experiments,
+            and learning projects.
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+    <!-- OPEN SOURCE / ACTIVITY -->
+    <section id="oss">
+      <p class="section-label">03 — Open Source</p>
+      <h2>Recent activity</h2>
+      <div class="oss-list" id="oss-list">
+        <div class="oss-loading">
+          <span class="t-prompt">$</span> fetching activity from GitHub API<span class="loading-dots"></span>
+        </div>
+      </div>
+      <p class="oss-footer-note">
+        Pulled live from the <a href="https://github.com/ST3V1K" target="_blank">GitHub Events API</a>.
+      </p>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="section-label">04 — Skills</p>
+      <h2>Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-item">Python</div>
+          <div class="skill-item">TypeScript</div>
+          <div class="skill-item">Java</div>
+          <div class="skill-item">C#</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tooling</div>
+          <div class="skill-item">Git & GitHub</div>
+          <div class="skill-item">Docker / Containers</div>
+          <div class="skill-item">Linux</div>
+          <div class="skill-item">Jekyll</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Practices</div>
+          <div class="skill-item">Open Source</div>
+          <div class="skill-item">Code Review</div>
+          <div class="skill-item">Refactoring</div>
+          <div class="skill-item">Documentation</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Interests</div>
+          <div class="skill-item">Hermetic Builds</div>
+          <div class="skill-item">CLI Tools</div>
+          <div class="skill-item">Language Learning</div>
+          <div class="skill-item">Dev Tooling</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <span class="footer-name">Jakub Nekvinda © 2026</span>
+    <div class="footer-links">
+      <a href="https://github.com/ST3V1K" target="_blank">GitHub</a>
+      <a href="mailto:st3v1k@seznam.cz">Email</a>
+    </div>
+  </footer>
+  <div id="toast" aria-live="polite">
+    <span class="toast-icon">⚠</span>
+    <span id="toast-msg"></span>
+  </div>
+</body>
